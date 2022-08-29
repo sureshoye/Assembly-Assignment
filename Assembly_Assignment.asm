@@ -14,16 +14,16 @@ ldi r21,0b00000001 ;initializing X
 ldi r22,0b00000001 ;initializing Y
 ldi r23,0b00000001 ;initializing Z
 
-or r19,r20
-and r18,r19
+or r19,r20  ; Execute OR operation between Y and Z and assign the result to Y
+and r18,r19 : Execute AND operation between X and Y, where Y is the result in above execution 
 
-mov r25,r21
+mov r25,r21 ; Assigning the X value to r25 register
 
-and r21,r23
+and r21,r23 ; Executing AND operation betweeb X and Y and Assigning the values to X
 
-and r25,r22
+and r25,r22 ; Executing AND operation betweeb X and Z and Assigning the values to X
 
-or r21,r25
+or r21,r25  ; Executing the OR operation between the results of X and X in the above steps
 
 ;following code is for displaying output
 ;shifting LSB in r16 to 2nd position
