@@ -2,7 +2,7 @@
 
 ldi r16, 0b11111100 ;identifying output pins 2
 out DDRD,r16  ;declaring pins as output
-ldi r17, 0b11111100 ;identifying output pins 8
+ldi r17, 0b11111100 ;identifying output pins 10
 out DDRB,r17  ;declaring pins as output
 
 
